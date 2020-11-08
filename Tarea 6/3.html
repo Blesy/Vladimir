@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Renglones</p>
+    <input type="number" name="renglones" id="renglones">
+    <p>Columnas</p>
+    <input type="number" name="columnas" id="columnas"><br><br>
+    <button onclick="crear()">Crear tabla</button>
+    <table id="table">
+
+    </table>
+    <script>
+        function crear() {
+            var tabla = document.getElementById('table');
+            var renglones = Number(document.getElementById('renglones').value);
+            var columnas = Number(document.getElementById('columnas').value);
+      
+            var dinamica = document.createElement('TABLE');
+            dinamica.border='1';
+            
+            var tableBody = document.createElement('TBODY');
+            dinamica.appendChild(tableBody);
+            
+            for (var i=0; i<renglones; i++){
+                var tr = document.createElement('TR');
+                tableBody.appendChild(tr);
+            
+                for (var j=0; j<columnas; j++){
+                    var td = document.createElement('TD');
+                    td.appendChild(document.createTextNode("Celda " + (i + 1) + ", " + (j + 1)));
+                    tr.appendChild(td);
+                }
+            }
+            tabla.innerHTML = '';
+            tabla.appendChild(dinamica);
+        }
+    </script>
+</body>
+</html>

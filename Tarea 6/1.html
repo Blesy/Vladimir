@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <p>Ingrese las medidas del triangulo</p>
+    <input type="number" name="lado1" id="lado1">
+    <input type="number" name="lado2" id="lado2">
+    <input type="number" name="lado3" id="lado3"><br><br>
+    <button onclick="calcular()">Calcular</button>
+    <p id="tipo"></p>
+    <script>
+        function calcular() {
+            var lado1 = Number(document.getElementById('lado1').value);
+            var lado2 = Number(document.getElementById('lado2').value);
+            var lado3 = Number(document.getElementById('lado3').value);
+            var txt;
+            if (((lado1 + lado2 + lado3) / 3) === lado1){
+                txt = "Es un triangulo equilátero";
+            } else if (lado1 !== lado2 && lado1 !== lado3 && lado2 !== lado3) {
+                txt = "Es un triangulo escaleno";
+            } else {
+                txt = "Es un triangulo isósceles";
+            }
+            document.getElementById("tipo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

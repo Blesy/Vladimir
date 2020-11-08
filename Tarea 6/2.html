@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="licenciaturas">
+        <li>informática</li>
+        <li>ingeniería bioquímico</li>
+        <li>ingeniería civil</li>
+        <li>biología</li>
+        <li>arquitectura</li>
+    </ol>
+    <script>
+        function ready() {
+            var ol = document.getElementById('licenciaturas');
+            for (let index = 0; index < ol.children.length; index++) {
+                var cadena = ol.children[index].textContent;
+                var array = cadena.split(' ');
+                txt = array.map(function(cadena) {
+                    return cadena.charAt(0).toUpperCase() + cadena.slice(1)
+                });
+                ol.children[index].innerHTML = '<a href="https://www.uas.edu.mx/" target="_blank">' + txt.join(' ') +'</a>';
+            }
+        }
+        document.addEventListener("DOMContentLoaded", ready);
+    </script>
+</body>
+</html>
