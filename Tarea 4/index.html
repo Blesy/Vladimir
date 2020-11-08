@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <p>Radio del circulo</p>
+        <input type="number" name="radio" id="radio">
+        <button onclick="calculo()">Calcular</button>
+    </div>
+    <script>
+        function calculo(){
+            var radio = document.getElementById('radio').value;
+            var perimetro = (2 * Math.PI * radio).toFixed(2);
+            var area = (Math.PI * Math.pow(radio, 2)).toFixed(2);
+            alert('El area del circulo es: ' + area + ". Y el perimetro: " + perimetro)
+        }
+    </script>
+</body>
+</html>
