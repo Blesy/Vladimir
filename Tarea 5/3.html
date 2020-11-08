@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="titulo">Titulo</h1>
+    <input type="text" name="texto" id="texto">
+    <button onclick="convertir()">Convertir</button>
+    <script>
+        function convertir() {
+            var texto = (document.getElementById('texto').value).toLowerCase();
+            var array = texto.split(' ');
+            var cadenaArray = array.map(function(cadena) {
+                return cadena.charAt(0).toUpperCase() + cadena.slice(1)
+            });
+            var txt = cadenaArray.join(" ");
+            document.getElementById("titulo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

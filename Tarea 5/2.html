@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <p>Ingrese el texto</p>
+        <input type="text" name="texto" id="texto">
+        <p>Palabra a buscar</p>
+        <input type="text" name="palabra" id="palabra"><br><br>
+        <button onclick="calculo()">Buscar</button>
+        <p id="contador"></p>
+    </div>
+    <script>
+        function calculo() {
+            var texto = (document.getElementById('texto').value).toLowerCase();
+            var palabra = (document.getElementById('palabra').value).toLowerCase();
+            var array = texto.split(' ');
+            var contador = 0;
+            array.map(function(cadena) {
+                if (cadena === palabra) {
+                    contador++;
+                }
+            });
+            var txt = "La palabra se repite " + contador + " veces en el texto ingresado";
+            document.getElementById("contador").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <p id="texto"></p>
+<script>
+    var txt;
+    var text = prompt("Ingrese el texto", "");
+    if (text !== null && text !== "") {
+        var palabras = text.split(' ');
+        txt = "Contiene " + palabras.length + " palabras.";
+        document.getElementById("texto").innerHTML = txt;
+    } else {
+        txt = "Invalido";
+        document.getElementById("texto").innerHTML = txt;
+    }
+</script>
+</body>
+</html>
