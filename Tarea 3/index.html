@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="estilo.css">
+    <h2>Alumnos del Diplomado</h1>
+    <hr><br>
+    <form action="">
+        <p>Nombre:</p>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre...">
+        <p>Apellido:</p>
+        <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido...">
+        <p>Edad:</p>
+        <input type="number" name="edad" id="edad" placeholder="Captura tu edad...">
+        <p>Grado academico:</p>
+        <select name="grado" id="grado">
+            <option value="1">Primaria</option>
+            <option value="2">Secundaria</option>
+            <option value="3">Preparatoria</option>
+            <option value="4">Universidad</option>
+        </select>
+        <p>Lenguaje de programacion favorito:</p>
+        <select name="lenguaje" id="lenguaje">
+            <option value="1">Javascript</option>
+            <option value="2">Python</option>
+            <option value="3">C#</option>
+            <option value="4">PHP</option>
+        </select>
+        <input class="boton" type="submit" value="Agregar">
+    </form>
+    <table>
+        <tr class="encabezado">
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Edad</td>
+            <td>Grado</td>
+            <td>Lenguaje</td>
+        </tr>
+        <tr class="gris">
+            <td>Jose</td>
+            <td>Lopez</td>
+            <td>22</td>
+            <td>Licenciatura</td>
+            <td>PHP</td>
+        </tr>
+        <tr class="blanco">
+            <td>Maria</td>
+            <td>Gonzalez</td>
+            <td>18</td>
+            <td>Preparatoria</td>
+            <td>C#</td>
+        </tr>
+        <tr class="gris">
+            <td>David</td>
+            <td>Diaz</td>
+            <td>28</td>
+            <td>Maestria</td>
+            <td>PHP</td>
+        </tr>
+        <tr class="blanco">
+            <td>Ernesto</td>
+            <td>Espinoza</td>
+            <td>23</td>
+            <td>Licenciatura</td>
+            <td>PHP</td>
+        </tr>
+        <tr class="gris">
+            <td>Saul</td>
+            <td>Rodriguez</td>
+            <td>19</td>
+            <td>Preparatoria</td>
+            <td>C#</td>
+        </tr>
+    </table>
+</body>
+</html>

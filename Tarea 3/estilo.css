@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: dodgerblue;
+}
+p{
+    display: inline-block;
+    width: 28%;
+}
+form{
+    padding-bottom: 60px;
+}
+input[type=text], select, input[type=number]{
+    box-sizing: border-box;
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+.boton{
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.encabezado{
+    color: white;
+    background-color: dodgerblue;
+}
