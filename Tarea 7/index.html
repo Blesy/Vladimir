@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Nombre
+        <input type="text" name="nombre" id="nombre" required><br><br>
+        Direccion
+        <input type="text" name="direccion" id="direccion" required><br><br>
+        Ciudad
+        <input type="text" name="ciudad" id="ciudad" required><br><br>
+        Estado
+        <select name="estados" id="estados">
+            <option value="aguascalientes">Aguascalientes</option>
+            <option value="sonora">Sonora</option>
+            <option value="sinaloa">Sinaloa</option>
+            <option value="tabasco">Tabasco</option>
+            <option value="veracruz">Veracruz</option>
+        </select><br><br>
+        <div class="sexo">
+            Sexo <br>
+            <input type="radio" name="sexo" id="m" required>Mujer
+            <input type="radio" name="sexo" id="h" required>Hombre
+        </div><br>
+        <div class="estado-civil">
+            Estado civil <br>
+            <input type="radio" name="civil" id="soltero" required>Soltero
+            <input type="radio" name="civil" id="casado" required>Casado
+        </div><br>
+        <div class="ocupacion">
+            Ocupacion <br>
+            <input type="checkbox" name="ocupacion" id="ingeniero">Ingeniero
+            <input type="checkbox" name="ocupacion" id="plomero">Plomero
+            <input type="checkbox" name="ocupacion" id="maestro">Maestro
+            <input type="checkbox" name="ocupacion" id="contador">Contador
+        </div><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
