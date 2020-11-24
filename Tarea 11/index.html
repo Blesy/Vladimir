@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <h1>Proyecto</h1>
+            <div class="no-agregado"
+                v-on:click="changeClass()"
+                v-for="item in items">
+                <span>{{ item.tipo }}</span>
+                <span class="end">{{ item.precio }}</span>
+            </div>
+            
+            <hr style="width: 280px; float: left"><br>
+            <div class="total">
+                <span>Total</span>
+                <span class="end">{{ total }}</span>
+            </div>
+        </div>
+            
+        <script src="index.js"></script>
+    </body>
+</html>

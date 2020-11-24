@@ -1,0 +1,37 @@
+html, body {
+    margin: 5px;
+    padding: 0;
+}
+#app{
+    margin: 0 40%;
+    text-align: center;
+    background-color: darkgrey;
+    padding: 10px 2.6%;
+}
+.agregado{
+    background-color: green;
+    padding: 12px 15px;
+    width: 250px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: white;
+}
+.no-agregado{
+    background-color: red;
+    padding: 12px 15px;
+    width: 250px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: white;
+}
+.agregado, .no-agregado:hover{
+    cursor: pointer;
+}
+.total{
+    padding: 12px 15px;
+    width: 250px;
+    text-align: left;
+}
+.end{
+    float: right;
+}
